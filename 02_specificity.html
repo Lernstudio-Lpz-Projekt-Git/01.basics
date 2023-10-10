@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="02_specificity.css" />
+    <title>Spezifität</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Specificity</h1>
+    </header>
+
+    <div class="firstElement">
+      <h2>Was ist Specificity</h2>
+      <p id="id_css">
+        Spezifität ist der Algorithmus, den Browser verwenden, um die
+        CSS-Deklaration zu bestimmen , die für ein Element am relevantesten ist,
+        was wiederum den Eigenschaftswert bestimmt, der auf das Element
+        angewendet werden soll. Der Spezifitätsalgorithmus berechnet die
+        Gewichtung eines CSS-Selektors , um zu bestimmen, welche Regel aus
+        konkurrierenden CSS-Deklarationen auf ein Element angewendet wird.
+      </p>
+    </div>
+    <main id="myContent">
+      <h1>myContent</h1>
+    </main>
+
+    <div id="myApp">
+      <div id="myElement" class="bodyClass sectionClass parentClass">
+        ID Elemente: myApp -- myElement
+      </div>
+    </div>
+
+    <div>
+      <input type="text" name="eingabe" id="#myApp" required />
+    </div>
+    <div id="inline" class="inline">
+      <p name="inline" style="color: rgb(255, 0, 255)">Inline-Styles</p>
+    </div>
+
+    <footer>
+      <p class="basics">&copy; 2023 Beispielunternehmen</p>
+    </footer>
+  </body>
+</html>

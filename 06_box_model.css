@@ -1,0 +1,77 @@
+:root {
+  background: rgb(161, 161, 161);
+}
+
+* {
+  /* outline: 3px dotted rgb(35, 24, 255); */
+  border: 3px dotted rgb(35, 24, 255);
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Das CSS-Attribut box-sizing beeinflusst, wie die Breite und Höhe 
+eines Elements berechnet werden, insbesondere in Bezug auf 
+das CSS-Box-Modell. Es gibt zwei Hauptwerte für box-sizing: content-box 
+und border-box, und sie haben unterschiedliche Auswirkungen 
+auf die Berechnung der Größe eines Elements: */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #ff6e48;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ff6e48;
+  padding: 10px;
+}
+
+div {
+  background: rgb(226, 226, 226);
+  border: 10px solid rgba(0, 0, 0, 0.711);
+  width: 400px;
+  height: 130px;
+  /* overflow: hidden; */
+  padding: 10px;
+  margin: 10px;
+  /* ist eine Kombination aus den Anzeige-Eigenschaften inline und block.  */
+  display: inline-block;
+}
+/* Bei border-box werden Padding und Border in die Breite und Höhe 
+einbezogen, und das Element bleibt auf die angegebene Breite und 
+Höhe beschränkt.  */
+div.border-box {
+  box-sizing: border-box;
+}
+
+/* content-box (Standardwert): */
+/* Bei content-box werden Padding und Border zur Breite und Höhe 
+hinzugefügt, was dazu führt, dass das Element insgesamt größer wird. */
+div.content-box {
+  box-sizing: content-box;
+}
+
+#page{
+  height: auto;
+  box-sizing: content-box;
+  padding: 10px;
+  /* box-sizing: border-box; */
+}
+
+li {
+  padding: 12px;
+  color: blue;
+}

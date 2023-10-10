@@ -1,0 +1,125 @@
+/**
+  * 1. Basiseinstellungen 
+  */
+
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Der CSS-Selektor ':root' hat eine spezielle Bedeutung in CSS, 
+  da er verwendet wird, um die sogenannten CSS-Variablen oder Custom 
+  Properties zu definieren und zu initialisieren. Die Wurzel des Dokuments, 
+  auch bekannt als das HTML-Element, wird durch ':root' repräsentiert. */
+
+:root {
+  outline: 10px solid green;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  /* box-sizing: border-box; */
+  /* font-size: 1.2rem; */
+  color: green;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color:  #ff6e48;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color:  #ff6e48;
+  padding: 10px;
+  font-size: 16px;
+}
+
+div, span, main {
+  padding: 10px 20px;
+}
+
+/** 
+  * 2. Layoutbereiche 
+  */
+
+/* div a {
+  color: rgb(243, 13, 13);
+} */
+/* 1. Der Browser-Default-Wert ist blau */
+.my-class-1 a {
+  /* color: unset; */
+  border: 0;
+}
+/* 2. Erbt von Parent-Element (body) */
+.my-class-2 a {
+  color: inherit;
+}
+/* 3. der Anfangswert der Eigenschaft (in diesem Fall Schwarz) 
+verwendet wird und nicht der Browser-Standardwert für Links, 
+der blau ist.  */
+.my-class-3 a {
+  color: initial;
+}
+
+.my-class-4 a {
+  color: unset;
+}
+
+/** 
+  * 3. Layoutbereiche 
+  */
+blockquote {
+  color: rgb(255, 255, 255);
+  background-color: orange;
+  border: 2px solid blue;
+}
+
+.fix-this {
+  all: unset;
+}
+
+/** 
+  * 4. Layoutbereiche 
+  */
+.setinherit p {
+  background-color: rgb(255, 251, 195);
+  border: medium solid;
+}
+/* Obwohl border nicht vererbt wird, kann eine Vererbung erzwungen werden */
+.setinherit em {
+  background-color: rgb(255, 207, 173);
+  /* background-color: inherit; */
+  border: inherit;
+}
+
+/** 
+  * 4. Layoutbereiche 
+  */
+/* Setzt alle Texte und deren Child-Elemente rot 
+     und überschreibt die Class-Definition*/
+span {
+  color: red;
+}
+/* Setzt alle Texte innerhalb von FOO blau, wird von SPAN überschrieben */
+.foo {
+  color: blue;
+}
+/* Setzt alle Texte innerhalb von BAR grün, wird von SPAN überschrieben */
+.bar {
+  color: green;
+}
+/* Setzt SPAN-Definition (rot) zurück und erbt von BAR */
+.bar span {
+  color: unset;
+}

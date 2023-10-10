@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background: #333; */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #ff6e48;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ff6e48;
+  padding: 10px;
+}
+
+/* Flexbox CSS */
+
+.container {
+  background: white;
+  margin: 0 auto;
+  /* padding: 1em; */
+  max-width: 1200px;
+}
+/* alle direkten Nachkommen von Elementen 
+mit der Klasse "container" */
+.container * {
+  padding: 1em;
+}
+
+.nav-main {
+  background: #97a2aa;
+}
+
+.content {
+  padding: 0;
+}
+
+.main {
+  background: white;
+}
+
+.sidebar {
+  background: #f0f3f5;
+}
+
+.sidebar2 {
+  background: #daedc1;
+}
+/* Die Regeln werden nur auf Geräten mit einer Bildschirmbreite  */
+/* von 800 Pixeln oder mehr aktiviert. */
+/* Media-Query, die für Bildschirme (screen) gilt */
+@media screen and (min-width: 800px) {
+    
+}
+.content {
+  display: flex;
+  flex-direction: row; /* Standardwert */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.main {
+    flex: 3;
+    order: 2;
+  }
+
+  .sidebar {
+    flex: 1;
+    order: 1;
+  }
+
+  .sidebar2 {
+    flex: 1;
+    order: 3;
+  }

@@ -1,0 +1,60 @@
+@layer secondLayer, firstLayer;
+
+/* 1-0-0  !important */
+@layer firstLayer {
+  #addSpecificity {
+    background-color: blue;
+    color: rgb(234, 255, 115);
+    border-width: 10px;
+    border-style: double;
+  }
+}
+/* 1-0-1  !important */
+@layer secondLayer {
+  p#addSpecificity {
+    background-color: rgb(41, 245, 41);
+    color: rgb(0, 0, 0);
+    border-width: 10px;
+    border-style: dotted;
+  }
+}
+
+/* 0-0-1 */
+p {
+  font-size: 2rem;
+  padding: 3px;
+  background-color: rgb(21, 24, 21);
+  color: rgb(255, 255, 255);
+  border: 10px inset rgb(0, 255, 30);
+}
+
+/* 1-0-1 */
+p#addSpecificity {
+  border-style: solid;
+}
+
+/* Basic-CSS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.basics {
+  background-color: #333;
+  color: #ff6e48;
+  border: 0;
+  font-size: 100%;
+}
+header {
+  background-color: #333;
+  color: #ff6e48;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}

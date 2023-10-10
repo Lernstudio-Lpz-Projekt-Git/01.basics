@@ -1,0 +1,144 @@
+/**
+  * 1. Basiseinstellungen 
+  */
+
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Der CSS-Selektor ':root' hat eine spezielle Bedeutung in CSS, 
+da er verwendet wird, um die sogenannten CSS-Variablen oder Custom 
+Properties zu definieren und zu initialisieren. Die Wurzel des Dokuments, 
+auch bekannt als das HTML-Element, wird durch ':root' repräsentiert. */
+
+:root {
+  outline: 10px solid green;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* box-sizing:content-box; */
+}
+
+header {
+  background-color: #333;
+  color: #ff6e48;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ff6e48;
+  padding: 10px;
+}
+
+div {
+  padding: 10px 0;
+}
+
+/** 
+  * 1. Layoutbereiche gestalten (Überschrift) 
+  */
+
+/* 0-0-2 */
+/* div h2 {
+    color:rgb(43, 226, 49);
+} */
+
+/* 0-0-1 */
+h2 {
+  color: blueviolet;
+}
+
+/** 
+  * 2. Layoutbereiche gestalten (Text-Abschnitt) 
+  */
+
+/* 0-0-1 */
+p {
+  font-size: 22px;
+}
+/* 1-0-0 */
+/* #id_css {
+    font-size: 9px;
+} */
+/* 1-0-1 */
+/* p#id_css {
+    font-size: 16px;
+} */
+
+#myContent {
+  color: rgb(111, 0, 128);
+  /* 1-0-0 */
+}
+
+/* 1-0-1 */
+#myContent h1 {
+  color: green;
+}
+/* 0-1-1 */
+[id="myContent"] h1 {
+  color: rgb(0, 153, 255);
+}
+
+:where(#myContent) h1 {
+  color: blue;
+  /* 0-0-1 */
+}
+
+/* ID Selektor hat höchste Priorität */
+#myElement {
+  color: rgb(255, 0, 0); /* 1-0-0  - Auswahl!! */
+}
+
+.bodyClass .sectionClass .parentClass [id="myElement"] {
+  color: yellow; /* 0-4-0 */
+}
+
+/* ID Selektor + Attribut hat höchste Priorität */
+#myApp [id="myElement"] {
+  color: green; /* 1-1-0  - Auswahl!! */
+}
+
+/* komplexer Input + 2 Attribut + Reaktivität 
+   + ID + Attribut */
+/* 1-4-1 bei Focus 1-4-2 */
+[type="text"],
+[name="eingabe"],
+input:focus,
+#myApp input:required {
+  outline: 0;
+  font-size: 180%;
+  color: rgb(255, 0, 47);
+  border: 5px solid rgb(255, 0, 0);
+}
+/* 1-4-1 */
+[type="text"],
+[name="eingabe"],
+input:active,
+#myApp input:required {
+  outline: 0;
+  font-size: 180%;
+  color: rgb(0, 17, 255);
+  border: 5px solid blue;
+}
+
+/* Inline style + important */
+div p[style*="purple"] {
+  color: rgb(51, 153, 76);
+}
+
+/* Das '*' innerhalb der eckigen Klammern [style*="purple"] 
+ist ein Attribut-Selektor und wird verwendet, um nach 
+<p>-Elementen zu suchen, deren style-Attribut einen Teilwert 
+enthält, der dem String "purple" entspricht. */
+div p[style*="purple"] {
+  color: rgb(0, 0, 0) !important;
+}

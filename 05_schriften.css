@@ -1,0 +1,92 @@
+/* Basic-Layout */
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Regular.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Light.ttf");
+    font-weight: 300;
+  }
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("assets/Cormorant/static/Cormorant-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Cormorant', serif; */
+  /* font-family: 'Indie Flower'; */
+  /* font-family: monospace; */
+  font-family: system-ui;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* box-sizing:content-box; */
+}
+
+header {
+  background-color: #333;
+  color: #ff6e48;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #ff6e48;
+  padding: 10px;
+}
+/* der MainContainer fungiert als Eltern-Element  für Container 1 und alle Ps */
+.main-container {
+    font-size: 120%;
+}
+/* der Container fungiert als Eltern-Element */
+.container1 {
+    font-size: 120%;
+}
+/* Kind-Element des Containers */
+.p1 {
+    font-size: 1rem;
+}
+/* Kind-Element des Containers */
+.p2 {
+    font-size: 1em;
+}
+/* Kind-Element von Main */
+.p3 {
+    margin: 0 20px;
+    font-size: 3vw;
+}
+
+
+
+main h1, h2, h3 {
+    margin: 0 20px;
+    color: blue;
+}
+
+p {
+    margin: 20px 20px;
+}

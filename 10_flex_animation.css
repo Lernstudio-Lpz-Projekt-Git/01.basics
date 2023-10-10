@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Regular.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("https://assets.codepen.io/907368/Roboto-Light.ttf");
+    font-weight: 300;
+  }
+  body,
+  html {
+    width: 100%;
+   
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --image-1: url(https://assets.codepen.io/907368/slider-1.jpg?format=webp&quality=40);
+    --image-2: url(https://assets.codepen.io/907368/slider-2.jpg?format=webp&quality=40);
+    --image-3: url(https://assets.codepen.io/907368/slider-3.jpg?format=webp&quality=40);
+  }
+  
+  .container {
+    width: 80%;
+
+  }
+  .container .column {
+    width: 100%;
+  }
+  .container .column-1 .item-1 {
+    height: 4rem;
+    -webkit-animation: background 5s 150ms infinite ease-in-out;
+            animation: background 5s 150ms infinite ease-in-out;
+  }
+
+  .container .column .item {
+    width: inherit;
+  }
+  

@@ -1,0 +1,63 @@
+
+/* Basic-Layout */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* box-sizing:content-box; */
+  }
+  
+  header {
+    background-color: #333;
+    color: #ff6e48;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #ff6e48;
+    padding: 10px;
+  }
+/* Universal-Selektor */
+
+
+/* Typeselektoren */
+
+
+
+/* Klassen-Selektor */
+
+
+/* ID Selektoren */
+
+
+/* Attribut-Selektoren */
+/* Attributpräsenz- und Wertselektoren */
+
+
+/* Attribut-Teilzeichenfolgen-Matching-Selektoren */
+/* Teilzeichenfolgen innerhalb des Werts eines Attributs finden*/
+
+/* entspricht jedem Attributwert, der mit b beginnt, 
+entspricht also den ersten beiden Listenelementen.  */
+
+
+/* entspricht jedem Attributwert, der mit b endet, 
+entspricht also dem ersten und dritten Listenelement.  */
+
+
+/* entspricht jedem Attributwert wo b an einer beliebigen Stelle 
+in der Zeichenfolge erscheint, so dass es mit allen unseren 
+Listenelementen übereinstimmt. */
+
+
+/* Groß-/Kleinschreibung wird nicht beachtet */
+/* i = Attributwerte ohne Berücksichtigung der Groß- und Kleinschreibung 
+abgleichen möchten */
+
+ 
